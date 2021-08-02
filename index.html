@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sneakers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
@@ -25,7 +28,7 @@
         </div>
 
         <div class="header_nav">
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="#pickup">PICK UP</a></li>
                     <li><a href="#feature">FEATURE</a></li>
@@ -33,9 +36,11 @@
                 </ul>
             </nav>
             <div class="sns">
-                <a href="#">twitter</a>
-                <a href="#">Facebook</a>
-                <a href="#">instagram</a>
+                <ul>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
             </div>
         </div>
 
@@ -43,7 +48,7 @@
 
     <main>
         <div class="mainvisual">
-            <video src="./img/mainvisual.mp4" autoplay loop preload="none"></video>
+            <video src="./img/mainvisual.mp4" autoplay muted loop preload="none"></video>
         </div>
 
         <!-- pickup -->
@@ -52,7 +57,7 @@
             <h2>PICK UP</h2>
 
             <div class="p_wrapper">
-                <ul>
+                <ul class="slick_slider">
                     <li><a href="#"><img src="./img/item_1-min.png" alt="アイテム1の画像です。"></a></li>
                     <li><a href="#"><img src="./img/item_2-min.png" alt="アイテム2の画像です。"></a></li>
                     <li><a href="#"><img src="./img/item_3-min.png" alt="アイテム3の画像です。"></a></li>
@@ -194,7 +199,7 @@
                         <input type="email" name="mail" id="mail">
                         <label for="message">Message:</label>
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <input type="submit" value="SEND">
+                        <input class="submit" type="submit" value="SEND">
                     </form>
                 </div>
             </div>
