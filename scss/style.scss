@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+$breakpoints: (
+    'pc': "screen and (max-width:900px)",
+);
+//$breakpoint: pcで初期設定している
+@mixin md($breakpoint: pc) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+.hoge {
+    color: red;
+}
+
