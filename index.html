@@ -6,12 +6,208 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sneakers</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 
-    <p class="hoge">hogehoge</p>
+    <header>
 
+        <div class="header_wrapper">
+            <!-- <img src="./img/logo.png" alt="Sneakersのロゴ"> -->
+            <h1>Sneakers</h1>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="header_nav">
+            <nav>
+                <ul>
+                    <li><a href="#pickup">PICK UP</a></li>
+                    <li><a href="#feature">FEATURE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <a href="#">twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">instagram</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="mainvisual">
+            <video src="./img/mainvisual.mp4" autoplay loop preload="none"></video>
+        </div>
+
+        <!-- pickup -->
+        <section class="pickup" id="pickup">
+
+            <h2>PICK UP</h2>
+
+            <div class="p_wrapper">
+                <ul>
+                    <li><a href="#"><img src="./img/item_1-min.png" alt="アイテム1の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_2-min.png" alt="アイテム2の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_3-min.png" alt="アイテム3の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_4-min.png" alt="アイテム4の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_5-min.png" alt="アイテム5の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_6-min.png" alt="アイテム6の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_7-min.png" alt="アイテム7の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_8-min.png" alt="アイテム8の画像です。"></a></li>
+                    <li><a href="#"><img src="./img/item_9-min.png" alt="アイテム9の画像です。"></a></li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- /pickup -->
+
+        <!-- feature -->
+        <section class="feature" id="feature">
+
+            <h2>FEATURE</h2>
+
+            <div class="f_list">
+
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_1-min.png" alt="アイテム1の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_2-min.png" alt="アイテム2の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_3-min.png" alt="アイテム3の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_4-min.png" alt="アイテム4の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_5-min.png" alt="アイテム5の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_6-min.png" alt="アイテム6の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_7-min.png" alt="アイテム7の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_8-min.png" alt="アイテム8の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_item">
+                    <a href="#">
+                        <img src="./img/item_9-min.png" alt="アイテム9の画像です。">
+                        <div class="f_content">
+                            <p class="f_content_cat">category</p>
+                            <p class="f_content_txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <time datetime="2021-8-1" itemprop="datepublished">2021.08.01</time>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /feature -->
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <h2>CONTACT</h2>
+            <div class="c_wrapper">
+                <div class="c_about">
+                    <p>
+                        テキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p>
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+                <div class="c_form">
+                    <form action="#">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="mail">Mail:</label>
+                        <input type="email" name="mail" id="mail">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /contact -->
+    </main>
+
+    <footer>
+        <small>© Sneakers</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./js/slick.js"> </script>
     <script type="text/javascript" src="./js/main.js"> </script>
 </body>
 </html>
