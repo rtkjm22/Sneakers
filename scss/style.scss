@@ -18,6 +18,9 @@ $bold: 600;
 $normal: 400;
 $light: 300;
 
+html {
+    scroll-behavior: smooth;
+}
 
 h1, h2, label {
     font-family: $en_font;
@@ -99,20 +102,9 @@ header {
     background-color: #000000d2;
     padding: 70px 30px;
     transition: all .3s;
+    z-index: 10000;
     a {
         color: white;
-    }
-    &::before {
-        display: none;
-        content: '';
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        // transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        transition: all .3s;
     }
 }
 
@@ -147,6 +139,20 @@ header {
     margin-bottom: 10px;
 }
 
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #38383860;
+    z-index: 5000;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
 /**
 * /header ****************************************************************************************************
 **/
@@ -165,10 +171,6 @@ h2 {
     margin-bottom: 50px;
 }
 
-// section {
-//     margin: 150px 0;
-// }
-
 //メインビジュアル
 .mainvisual {
     width: 100vw;
@@ -176,7 +178,6 @@ h2 {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 150px;
     video {
         position: absolute;
         top: 50%;
@@ -192,17 +193,15 @@ h2 {
 * pickup ****************************************************************************************************
 **/
 .pickup {
-    margin-bottom: 150px;
+    padding-top: 100px;
 }
 
 .p_wrapper {
-    ul {
-        width: 100%;
-    }
-    a {
+    img {
         display: block;
-        width: 100%;
-        height: 100%;
+        width: auto;
+        min-height: 300px;
+        max-width: 100%;
     }
 }
 
@@ -217,6 +216,7 @@ h2 {
 
 .feature {
     margin-bottom: 50px;
+    padding-top: 100px;
 }
 
 .f_list {
@@ -247,6 +247,16 @@ h2 {
         display: block;
         width: 100%;
         height: auto;
+        opacity: 0;
+        transition: .3s all;
+        transform: translateY(30px);
+        &.active {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    @include md() {
+        margin: 30px 0;
     }
 }
 .f_content {
@@ -280,7 +290,7 @@ h2 {
 **/
 
 .contact {
-    padding: 50px 20px;
+    padding: 100px 20px 50px;
     background-color: black;
     h2, p, label {
         color: white;
@@ -303,11 +313,10 @@ h2 {
         }
     }
     .c_form {
+        width: 40%;
         form {
             width: 100%;
         }
-        // padding: 0 30px;
-        width: 40%;
         label, input {
             display: block;
         }
@@ -320,6 +329,7 @@ h2 {
             padding: 10px;
             width: 100%;
             border-radius: 2px;
+            box-sizing: border-box;
         }
         .submit {
             width: 200px;
@@ -335,13 +345,17 @@ h2 {
         }
     }
     @include md() {
-        // width: 100%;
         display: block;
-        .c_about {
-            // width: 100%;
-        }
-        .c_form {
+        min-width: 200px;
+        width: 100%;
+        .c_form, .c_about {
             width: 100%;
+        }
+        .c_about {
+            padding: 0;
+        }
+        .submit {
+            margin: 0 auto;
         }
     }
 }
